@@ -10,7 +10,8 @@
 
 
 
-class ServiceObject:
+from builtins import object
+class ServiceObject(object):
 	
     def __init__(self, name, host, desc, serviceType, url, directory, layers):
         self.name = name
